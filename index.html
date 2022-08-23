@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Helps press Jackson Pollock like drawings onto a GIF.">
+    <title>sPLasHiNg</title>
+    <script src="bundle.js" type="module"></script>
+    <style>
+      html {
+        font: medium/normal sans-serif;
+        height: 100%;
+      }
+      body {
+        display: grid;
+        margin: 0;
+        min-height: 100%;
+      }
+      main {
+        margin: auto;
+        position: relative;
+      }
+      figure {
+        margin: 0;
+        position: relative;
+      }
+      figcaption {
+        font-size: small;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        text-align: center;
+      }
+      canvas {
+        background: whitesmoke;
+        display: block;
+        object-fit: cover;
+        width: 100%;
+      }
+      img {
+        vertical-align: middle;
+      }
+      menu {
+        list-style: none;
+        margin: 1rem;
+        padding: 0;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      menu li {
+        display: inline;
+      }
+      menu li:not(:first-of-type) {
+        margin-top: 0.5rem;
+      }
+      button {
+        pointer-events: all;
+      }
+      code {
+        font-size: medium;
+        white-space: break-spaces;
+      }
+      label {
+        bottom: 1rem;
+        left: 1rem;
+        position: absolute;
+      }
+      progress {
+        max-width: 100%;
+        width: 18rem;
+      }
+      @media all and (max-width: 640px), all and (max-height: 500px) {
+        figcaption {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <figure>
+        <figure>
+          <canvas height="360" width="640">
+            <img src="screenshot.png" alt="" height="360" width="640">
+          </canvas>
+          <label>
+            <small id="statusline">Sleeping&hellip;</small>
+            <br>
+            <progress id="progress" max="100" value="0">Encoding&hellip;</progress>
+          </label>
+        </figure>
+        <figcaption>
+          <p>Pressing <a href="https://thewhodidthis.com/sketches/splatter">splatter</a> onto a GIF with WebAssembly and the brush set in <a href="https://thewhodidthis.com/sketches/heavy-tailed"> L&eacute;vy flight</a> mode</p>
+        </figcaption>
+      </figure>
+      <menu>
+        <li>
+          <button id="clear">Clear</button>
+        </li>
+        <li>
+          <button id="draw">Run</button>
+        </li>
+        <li>
+          <button id="save" disabled>Save</button>
+        </li>
+      </menu>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "@thewhodidthis/animation": "https://cdn.jsdelivr.net/npm/@thewhodidthis/animation@3.0.0/main.js",
+    "@thewhodidthis/arithmetics": "https://cdn.jsdelivr.net/npm/@thewhodidthis/arithmetics@3.0.0/main.js",
+    "@thewhodidthis/vector": "https://cdn.jsdelivr.net/gh/thewhodidthis/vector@3.0.0/main.js",
+    "poltocar": "https://cdn.jsdelivr.net/npm/poltocar@4.0.0/main.js"
+  }
+}
