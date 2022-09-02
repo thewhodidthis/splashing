@@ -14,7 +14,7 @@ export default class Walker {
     this.y = y ?? this.y
   }
   walk(s = 1, max = this.max) {
-    // Directions are uniformly spread, scale represents step size
+    // Directions are uniformly spread, scale represents step size.
     const scale = Math.min(s, max)
     const angle = rand(TAU)
 

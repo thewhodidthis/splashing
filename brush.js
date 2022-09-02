@@ -55,6 +55,7 @@ export const brushes = await Promise.all(sprites)
 export function Brush() {
   const b = brushes.shift()
 
+  //Ooh, mutate in place, is this even legal?
   brushes.push(b)
 
   return b
