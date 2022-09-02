@@ -13,7 +13,7 @@ export function hex2rgb(hex) {
   ]
 }
 
-// Runs a callback when second called within a certain threshold.
+// Runs a callback when second-called within a certain threshold.
 export function deltaprobe(callback, then = performance.now()) {
   return (now = then, threshold = 250) => {
     if (now - then <= threshold) {
@@ -44,7 +44,7 @@ export function ranger(s = "") {
   return document.createRange().createContextualFragment(s)
 }
 
-// The Box-Muller transform for arriving from Uniform to Normal distribution
+// The Box-Muller transform for arriving from Uniform to Normal distribution.
 // https://en.wikipedia.org/wiki/Box–Muller_transform#Basic_form
 export function basic(mean = 0, standardDeviation = 1) {
   let swap = false
@@ -69,7 +69,7 @@ export function basic(mean = 0, standardDeviation = 1) {
   }
 }
 
-// And in the more performant polar form adapted from,
+// And in the more performant polar form. Adapted from:
 // https://en.wikipedia.org/wiki/Marsaglia_polar_method
 export function polar(mean = 0, standardDeviation = 1) {
   const sampler = () => {
@@ -104,7 +104,7 @@ export function polar(mean = 0, standardDeviation = 1) {
   }
 }
 
-// The Normal distribution probability density function (Gaussian PDF) adapted from,
+// The Normal distribution probability density function (Gaussian PDF). Adapted from:
 // https://github.com/errcw/gaussian/blob/master/lib/gaussian.js
 export function guassian(mean = 0, variance = 1) {
   const standardDeviation = Math.sqrt(variance)
@@ -123,7 +123,7 @@ export function randomNonZero() {
   return u
 }
 
-// For generating preferably higher random numbers adapted from natureofcode.com
+// For generating preferably higher random numbers adapted from natureofcode.com.
 export default function monteCarlo() {
   function sampler() {
     const r1 = Math.random()
@@ -133,7 +133,7 @@ export default function monteCarlo() {
       return r1
     }
 
-    // Keep working until a qualifying random value is found
+    // Keep working until a qualifying random value is found.
     return sampler()
   }
 
