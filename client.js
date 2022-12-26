@@ -1,6 +1,6 @@
 import { rand, curb } from "@thewhodidthis/arithmetics"
 import looper from "@thewhodidthis/animation"
-import glx from "./glx.js"
+import glx from "@thewhodidthis/glx"
 import { fragment, vertex } from "./shader.js"
 import Painter from "./painter.js"
 import { deltaprobe, ranger, sizeformatter } from "./helper.js"
@@ -25,9 +25,11 @@ const canvas = document.querySelector("canvas")
 const loop = looper(render)
 
 const attributes = { preserveDrawingBuffer: true }
-const { context: gl, createVbo, createProgram } = glx(canvas, { attributes })
+const { gl, createVbo, createProgram } = glx(canvas, { attributes })
 const shadow = canvas.cloneNode().getContext("2d")
 const { width: w, height: h } = canvas
+
+console.log(gl)
 
 const background = [1, 1, 1]
 const clearColor = [...background, 0]
