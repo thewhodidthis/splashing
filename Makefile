@@ -1,7 +1,7 @@
 js/watch:
 	deno bundle --import-map=imports.json client.js --watch --unstable bundle.js
 js:
-	deno bundle --import-map=imports.json client.js | \
+	deno bundle --import-map=imports.json client.js -r | \
 		esbuild --bundle --minify --sourcefile=client.js --outfile=bundle.js --format=esm
 js/lint:
 	deno lint client.js painter.js brush.js helper.js shader.js
