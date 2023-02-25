@@ -1,4 +1,5 @@
-import { TAU, rand } from "@thewhodidthis/arithmetics"
+import { rand } from "@thewhodidthis/arithmetics"
+import { TAU } from "@thewhodidthis/geometrics"
 
 export default class Walker {
   constructor(x = 0, y = x, max = 0) {

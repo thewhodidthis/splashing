@@ -1,6 +1,6 @@
-import { curb as clamp, lerp as mix, rand, randF, TAU } from "@thewhodidthis/arithmetics"
+import { curb as clamp, lerp as mix, rand, randF } from "@thewhodidthis/arithmetics"
+import { TAU, poltocar } from "@thewhodidthis/geometrics"
 import { vector, Vector } from "@thewhodidthis/vector"
-import poltocar from "poltocar"
 import { Brush } from "./brush.js"
 import { quadraticCurve } from "./helper.js"
 
