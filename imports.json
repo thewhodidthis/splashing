@@ -1,9 +1,9 @@
 {
   "imports": {
-    "@thewhodidthis/animation": "https://cdn.jsdelivr.net/npm/@thewhodidthis/animation@3.0.1/main.js",
-    "@thewhodidthis/arithmetics": "https://cdn.jsdelivr.net/npm/@thewhodidthis/arithmetics@3.0.0/main.js",
-    "@thewhodidthis/glx": "https://cdn.jsdelivr.net/gh/thewhodidthis/glx@0.0.1/main.js",
-    "@thewhodidthis/vector": "https://cdn.jsdelivr.net/gh/thewhodidthis/vector@3.0.0/main.js",
-    "poltocar": "https://cdn.jsdelivr.net/npm/poltocar@4.0.0/main.js"
+    "@thewhodidthis/animation": "https://thewhodidthis.github.io/animation/main.js",
+    "@thewhodidthis/arithmetics": "https://thewhodidthis.github.io/arithmetics/main.js",
+    "@thewhodidthis/glx": "https://thewhodidthis.github.io/glx/main.js",
+    "@thewhodidthis/vector": "https://thewhodidthis.github.io/vector/main.js",
+    "@thewhodidthis/geometrics": "https://thewhodidthis.github.io/geometrics/main.js"
   }
 }
