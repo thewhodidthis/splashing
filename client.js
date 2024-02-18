@@ -29,8 +29,6 @@ const { gl, createVbo, createProgram } = glx(canvas, { attributes })
 const shadow = canvas.cloneNode().getContext("2d")
 const { width: w, height: h } = canvas
 
-console.log(gl)
-
 const background = [1, 1, 1]
 const clearColor = [...background, 0]
 
@@ -105,7 +103,7 @@ const proxy = new Proxy(store, {
     }
 
     if (t.length && t.length % MAX_FRAMES === 0) {
-        loop.stop()
+      loop.stop()
     }
 
     if (t.length) {
